@@ -1,0 +1,14 @@
+{
+    "name": "formValidation",
+    "version": "1.0",
+    "desc": "form表单本地验证控件",
+    "cover": "https://cn.gravatar.com/userimage/51202129/0bce6a766bcdc2a4d93a012c2ccd2f7d.jpg",
+    "tag":"",
+    "author": {
+        "name": "淘知了",
+        "email": "slalx@126.com",
+        "page": "https://github.com/slalx"
+    },
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}

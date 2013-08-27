@@ -1,4 +1,13 @@
-formValidation
-==============
+## formValidation
 
-扩展性极强的表单验证类
+* 版本：1.0
+* 教程：[http://gallery.kissyui.com/formValidation/1.0/guide/index.html](http://gallery.kissyui.com/formValidation/1.0/guide/index.html)
+* demo：[http://gallery.kissyui.com/formValidation/1.0/demo/index.html](http://gallery.kissyui.com/formValidation/1.0/demo/index.html)
+
+## changelog
+
+### V1.0
+
+    [!]
+
+
