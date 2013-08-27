@@ -8,13 +8,15 @@
 </head>
 <body>
 <h2>formValidation的demo</h2>
-<form id="formDemo">
+<form id="formDemo" action="" name="demoForm">
     姓名：<input type="text" data-rulenames="required">
+    <br>
     <input type="submit" value="提交">
 </form>
 
 <script>
     var S = KISSY;
+
     if (S.Config.debug) {
         var srcPath = "../../../";
         S.config({
@@ -29,12 +31,11 @@
         });
     }
 
-    S.use('gallery/formValidation/1.0/index', function (S, FormValidation) {
-         var formValidation = new FormValidation();
-
-            var formv = new Validation({
+    S.use('gallery/formValidation/1.0/index, node', function (S, FormValidation, Node) {
+         var formValidation = new FormValidation({
                 form:'formDemo'
             });
+
             formValidation.set('rules',{
                 required:{
                     test: function(obj){
@@ -53,9 +54,15 @@
             });
 
             formValidation.on('showError',function(ev){
-                S.log('显示错误');
+                //
+                Node.one(ev.ele).after('<div style="color:red;">'+ev.msg+'</div>');
             }).on('hideError',function(ev){
-                S.log('隐藏错误');
+                //
+                var nextNode = Node.one(ev.ele).next();
+                if(nextNode && nextNode.prop('tagName')=='DIV'){
+                    Node.one(ev.ele).next().remove();
+                }
+                
             });
 
     })
