@@ -9,7 +9,7 @@ gallery/formValidation/1.0/index
  * @author 淘知了<zhiliao.zsl@taobao.com>
  * @module formValidation
  **/
-KISSY.add('gallery/formValidation/1.0/index',function (S, N,Base) {
+KISSY.add('gallery/formValidation/1.0/index',function (S, N, Base) {
     var EMPTY = '';
     var $ = Node.all;
     /**
