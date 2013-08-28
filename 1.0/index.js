@@ -3,7 +3,7 @@
  * @author 淘知了<zhiliao.zsl@taobao.com>
  * @module formValidation
  **/
-KISSY.add(function (S, Node,Base) {
+KISSY.add(function (S, N, Base) {
     var EMPTY = '';
     var $ = Node.all;
     /**
