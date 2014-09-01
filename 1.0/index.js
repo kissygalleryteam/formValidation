@@ -5,7 +5,7 @@
  **/
 KISSY.add(function (S, N, Base) {
     var EMPTY = '';
-    var $ = Node.all;
+    var $ = N.all;
     /**
      * 
      * @class FormValidation
